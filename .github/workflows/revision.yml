@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  check-inventario:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mostrar inventario
+        run: cat inventario.csv
